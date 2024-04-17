@@ -1,0 +1,29 @@
+[
+  {
+    "model": "app.car",
+    "pk": 1,
+    "fields": {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": 2006
+    }
+  },
+  {
+    "model": "app.car",
+    "pk": 2,
+    "fields": {
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2015
+    }
+  },
+  {
+    "model": "app.car",
+    "pk": 3,
+    "fields": {
+      "make": "Ford",
+      "model": "Fiesta",
+      "year": 2011
+    }
+  }
+]
