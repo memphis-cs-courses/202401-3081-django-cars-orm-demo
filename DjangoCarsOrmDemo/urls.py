@@ -17,10 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from django.views.generic.base import RedirectView
 from app import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("cars", views.cars_list, name="cars"),
+    path("cars/", views.cars_list, name="cars"),
     path("cars/<int:id>", views.car_detail, name="car"),
+    path("", RedirectView.as_view(url="cars/", permanent=True)),
 ]
